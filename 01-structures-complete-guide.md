@@ -1,3 +1,4 @@
+# Structures: Complete Guide
 
 > Module 0 · Post 1 of 13
 
@@ -853,4 +854,4 @@ Two ideas in particular are worth carrying forward. First, a structure is a cont
 
 That said, this post has used pointers freely without examining them closely. Before going further, we need to be precise about what a pointer actually holds, and about the relationship between pointers and arrays that C treats as almost, but not quite, interchangeable.
 
-**Next:** [Pointers and Arrays in C](./02-pointers-and-arrays.md)
+**Next:** [Pointers and Arrays in C →](./02-pointers-and-arrays.md)

@@ -1,3 +1,5 @@
+# Pointers and Arrays in C
+
 > Module 0 · Post 2 of 13
 
 Pointers are among the most powerful features of C, and also among the most confusing for beginners. The difficulty is that they deal with memory directly, which is something we rarely think about when writing ordinary code.
@@ -924,4 +926,4 @@ The key is to think in terms of memory: where values are stored, how addresses a
 
 What this post has not yet addressed is the specific ways a pointer can be invalid. We have seen an uninitialised pointer and a dangling one in passing, but there are several distinct failure modes, each with its own name, cause, and consequence. Naming them precisely is the last piece of groundwork before we turn to the operating system itself.
 
-**Next:** [Null Pointer, Dangling Pointer, Void Pointer, and Wild Pointer](./03-pointer-types.md)
+**Next:** [Null, Dangling, Void, and Wild Pointers →](./03-pointer-types.md)
