@@ -1,5 +1,4 @@
----
----
+# The Process - Most Important Abstraction in Your Computer
 
 > Module 1 · Post 4 of 13
 
@@ -438,4 +437,4 @@ But one question is still sitting unanswered. The OS is juggling hundreds of pro
 
 That record is called the Process Control Block. It is the OS's complete dossier on every process, updated every time a process changes state, saved every time a process is paused, and restored every time a process is resumed. Understanding every field inside the PCB is what turns a vague sense of what a process is into a precise, mechanical understanding of it.
 
-**Next:** [Part 2: How the OS Never Forgets, Inside the Process Control Block →](./05-process-control-block.md)
+**Next:** [How the OS Never Forgets, Inside the PCB →](./05-process-control-block.md)
