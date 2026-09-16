@@ -1,5 +1,4 @@
----
----
+# Inside the CPU: Stack Frames and Registers
 
 > Module 1 · Post 7 of 13
 
@@ -7,7 +6,7 @@
 
 Your computer is running hundreds of programs simultaneously. Your browser, your music player, background system services, all of them apparently alive at once. Yet your CPU is a fundamentally sequential machine: it executes exactly one instruction at a time. So how does it pull off this illusion? The answer lies in a beautifully interlocked set of mechanisms, and this post builds them up from zero, piece by piece, until the full picture clicks into place.
 
-In the last post we saw that the OS pauses and resumes processes thousands of times per second, a technique called the context switch, and that to resume a process correctly, the OS must save three registers: the Program Counter, the Stack Pointer, and the Frame Pointer. But why exactly these three? What makes them special, and what breaks if even one of them is missing? Answering that requires going one level deeper, into the CPU itself, into the stack, and into how function calls actually work. That is what this post does.
+In the earlier posts on the process and its PCB we saw that the OS pauses and resumes processes thousands of times per second, a technique called the context switch, and that to resume a process correctly, the OS must save three registers: the Program Counter, the Stack Pointer, and the Frame Pointer. But why exactly these three? What makes them special, and what breaks if even one of them is missing? Answering that requires going one level deeper, into the CPU itself, into the stack, and into how function calls actually work. That is what this post does.
 
 ## 2. Memory: The Foundation
 
@@ -959,8 +958,8 @@ All three together form a complete snapshot of exactly what Process A was doing.
 
 We started with a simple question: why does the OS save exactly three registers during a context switch, the PC, the RSP, and the RBP? The answer is now concrete. The PC is the bookmark that tells the CPU which instruction to resume from. The RSP is the pointer to the top of the stack; lose it, and the entire call chain of every function currently in progress becomes unreachable. The RBP is the fixed anchor inside the current function; lose it, and that function can no longer find any of its own local variables. Together, these three registers are the minimum complete description of what the CPU was doing at any given moment.
 
-The previous post looked at how the OS manages processes from the outside: creating them, scheduling them, tracking them in the PCB. This post has looked at the inside of what the OS is actually preserving every time it performs a context switch. Together, the two perspectives give the complete picture of how a modern operating system runs many programs on a single machine.
+The earlier posts in this module looked at how the OS manages processes from the outside: creating them, tracking them in the PCB, and switching between them. This post has looked at the inside of what the OS is actually preserving every time it performs a context switch. Together, the two perspectives give the complete picture of how a modern operating system runs many programs on a single machine.
 
 The next post turns to a different kind of illusion entirely: how every process on your machine believes it owns the whole of your computer's memory, even though hundreds of other processes are sharing that same physical RAM at the very same time.
 
-**Next:** [The Illusion of Private Memory, How Every Process Thinks It Owns Your Computer →](./08-illusion-of-private-memory.md)
+**Next:** [The Illusion of Private Memory →](./08-illusion-of-private-memory.md)
