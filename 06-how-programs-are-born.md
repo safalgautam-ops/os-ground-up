@@ -1,5 +1,4 @@
----
----
+# How Programs Are Born: The Process API
 
 > Module 1 · Post 6 of 13
 
@@ -694,4 +693,4 @@ Together, `fork()`, `exec()`, `wait()`, and `kill()` are the entire process API 
 
 There is still a layer underneath all of this that has been taken for granted so far. Every time a function is called, whether it is `main()` calling `fork()` or `wc` calling `printf()`, the CPU has to do real work: save a return address, set up space for local variables, and keep straight where in memory the current function's world begins and ends. That mechanism, the stack frame, and the registers that drive it, is what the next post takes apart.
 
-**Next:** [Inside the CPU, Stack Frames, Registers, and How Functions Really Work →](./07-inside-the-cpu.md)
+**Next:** [Inside the CPU: Stack Frames and Registers →](./07-inside-the-cpu.md)
