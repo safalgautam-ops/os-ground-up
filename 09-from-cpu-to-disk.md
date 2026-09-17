@@ -1,11 +1,10 @@
----
----
+# From CPU to Disk
 
 > Module 3 · Post 9 of 13
 
 ## 1. Picking Up the Thread: From CPU and Memory to I/O
 
-You have spent a long time understanding how the OS manages the CPU, through processes, scheduling, and context switching, and how it manages memory, through virtual address spaces, segmentation, and paging. In both cases, the pattern was the same: the OS creates an illusion. Each process believes it owns the entire CPU and its own private memory, when in reality the OS is secretly sharing and managing everything underneath.
+You have spent a long time understanding how the OS manages the CPU, through processes and context switching, and how it manages memory, through virtual address spaces, segmentation, and paging. In both cases, the pattern was the same: the OS creates an illusion. Each process believes it owns the entire CPU and its own private memory, when in reality the OS is secretly sharing and managing everything underneath.
 
 I/O follows the exact same philosophy, but now the resource being managed is not the CPU or RAM, it is the devices. Disk, keyboard, network card, USB, all of these are physical hardware that the OS must control, share between processes, and hide the complexity of. When your program calls `read()`, it has no idea whether the data is on an SSD, a spinning disk, or a USB drive. The OS and its drivers handle all of that invisibly, just as they handled memory translation invisibly through paging.
 
@@ -210,7 +209,7 @@ It is a sobering fact that over 70% of Linux kernel code is device drivers. The 
 
 I/O completes the picture. The CPU and disk can now work in parallel thanks to interrupts. Data moves without wasting the CPU thanks to DMA. And the entire hardware zoo, thousands of different devices from hundreds of manufacturers, is tamed by the layered driver model, which presents a clean, uniform interface upward so that file systems and applications never need to care about the specifics underneath.
 
-What you have built, across this checkpoint and the two posts before it, is a mental model of the entire OS: from how a single process runs and gets scheduled, to how its memory is translated on every instruction, to how its data reaches the physical disk and comes back again. Every piece connects. The OS is not a collection of unrelated features; it is one coherent system, built around a single idea: take messy, limited, shared hardware, and make it feel clean, unlimited, and private to every program running on top of it.
+What you have built, across the posts so far, is a mental model of how a single process lives inside the machine: from how it is created and runs on the CPU, to how its memory is translated on every instruction, to how its data reaches the physical disk and comes back again. Every piece connects. The OS is not a collection of unrelated features; it is one coherent system, built around a single idea: take messy, limited, shared hardware, and make it feel clean, unlimited, and private to every program running on top of it.
 
 There is still one piece of that picture left unopened. Whenever more than one process wants the CPU at the same time, something has to decide who actually goes first, and for how long. That decision is what the next post takes on: CPU scheduling.
 
