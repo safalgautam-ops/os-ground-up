@@ -1,5 +1,4 @@
----
----
+# The Illusion of Private Memory
 
 > Module 2 · Post 8 of 13
 
@@ -817,12 +816,12 @@ Copy-on-write makes `fork()` fast by letting the parent and child share the same
 
 ## Conclusion
 
-We now have the complete picture of how the OS gives each process its own private memory: through the virtual address space, page tables, TLB translation, demand paging, and copy-on-write. The OS manages memory beautifully, but memory is only half the story.
+We now have the complete picture of how the OS gives each process its own private memory: through the virtual address space, page tables, TLB translation, demand paging, and copy-on-write. Together with the earlier posts, the OS has now created two illusions: a CPU that seems to belong to every process, and memory that seems private to each one.
 
-The other half is time. Physical RAM can be divided and shared among processes simultaneously, with each process getting its own slice of space, but the CPU cannot be divided that way; only one process can use it at any given instant. So the OS must share the CPU across time instead, giving each process a turn, one at a time, switching between them so fast that it feels simultaneous.
+But there is a piece of this story that we have quietly used without ever opening up. Whenever a page fault occurred, or a page was swapped out, the OS read from or wrote to the disk, and we treated that as a black box: the data simply arrived, and the process carried on. Physical RAM is fast but small and loses everything when the power goes off, so sooner or later every program has to reach a real device.
 
-This raises an immediate question. When there are 200 processes all wanting the CPU and only one CPU available, how does the OS decide who goes next? How long should each process get? Should shorter tasks go first? Should every process get equal time? Should interactive programs be prioritized over background tasks? These are not mechanical questions; they are policy questions, and the answers have a dramatic impact on how responsive a computer feels, how fairly its resources are shared, and how efficiently its CPU is actually used.
+This raises an immediate question. How does the CPU actually talk to a disk, a keyboard, or a network card? How does it avoid sitting idle while a slow device does its work? And how does one operating system cope with thousands of different devices from hundreds of manufacturers? These are the questions of I/O, and the OS answers them with the same strategy it used for the CPU and for memory: hide the messy hardware behind a clean, uniform interface.
 
-That is the subject of the next post: CPU scheduling.
+That is the subject of the next post: how the CPU reaches the disk.
 
-**Next:** [CPU Scheduling: Introduction →](./09-cpu-scheduling-introduction.md)
+**Next:** [From CPU to Disk →](./09-from-cpu-to-disk.md)
