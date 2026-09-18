@@ -1,5 +1,4 @@
----
----
+# CPU Scheduling: Introduction
 
 > Module 4 · Post 10 of 13
 
@@ -390,4 +389,4 @@ This post worked through the core tradeoffs of CPU scheduling by relaxing one si
 
 All of this still leaves one open problem: the OS never actually knows how long a job will run. That is the subject of the next post: the Multi-Level Feedback Queue, a scheduler that learns a process's behavior over time instead of needing to know it in advance.
 
-**Next:** [The Scheduler That Learns: Multi-Level Feedback Queue →](./11-the-scheduler-that-learns.md)
+**Next:** [The Scheduler That Learns: MLFQ →](./11-the-scheduler-that-learns.md)
