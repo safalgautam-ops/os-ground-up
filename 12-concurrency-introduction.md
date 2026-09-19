@@ -1,5 +1,4 @@
----
----
+# Concurrency: An Introduction
 
 > Module 5 · Post 12 of 13
 
@@ -382,4 +381,4 @@ The core danger is captured in one line: shared data, combined with multiple thr
 
 What has not been covered yet is how those synchronization primitives are actually used in practice: the real pthread API for creating and coordinating threads, and how locks and condition variables get applied to real code. That is the subject of the next post.
 
-**Next:** [Interlude: The Thread API →](./13-interlude-thread-api.md)
+**Next:** [Interlude: Thread API →](./13-interlude-thread-api.md)
