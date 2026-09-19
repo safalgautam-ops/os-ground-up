@@ -1,5 +1,4 @@
----
----
+# Interlude: Thread API
 
 > Module 5 · Post 13 of 13
 
