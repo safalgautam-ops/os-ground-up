@@ -11,7 +11,7 @@ Most computer science students can define a process. They can recite what a sema
 
 This series is written to close that gap. It presents a single continuous account, traced from one keypress down through processes, memory, the CPU, scheduling, and concurrency. Nothing is assumed beyond basic C and a general understanding that a CPU executes instructions.
 
-**[Start here](./01-c-foundations/01-structures-complete-guide.md)**
+**[Start here](./01-structures-complete-guide.md)**
 
 ---
 
@@ -19,19 +19,19 @@ This series is written to close that gap. It presents a single continuous accoun
 
 | # | Post | Module |
 |---|------|--------|
-| 1 | [Structures: Complete Guide](./01-c-foundations/01-structures-complete-guide.md) | Module 0: C Foundations |
-| 2 | [Pointers and Arrays in C](./01-c-foundations/02-pointers-and-arrays.md) | Module 0: C Foundations |
-| 3 | [Null, Dangling, Void, and Wild Pointers](./01-c-foundations/03-pointer-types.md) | Module 0: C Foundations |
-| 4 | [Part 1: The Process](./02-processes/01-the-process.md) | Module 1: What Is a Process? |
-| 5 | [Part 2: How the OS Never Forgets, Inside the PCB](./02-processes/02-process-control-block.md) | Module 1: What Is a Process? |
-| 6 | [How Programs Are Born: The Process API](./02-processes/03-process-api.md) | Module 1: What Is a Process? |
-| 7 | [Inside the CPU: Stack Frames and Registers](./02-processes/04-cpu-stack-frames.md) | Module 1: What Is a Process? |
-| 8 | [The Illusion of Private Memory](./03-memory/01-illusion-of-private-memory.md) | Module 2: Memory |
-| 9 | [From CPU to Disk](./04-big-picture/01-cpu-to-disk.md) | Module 3: The Big Picture |
-| 10 | [CPU Scheduling: Introduction](./05-scheduling/01-cpu-scheduling-intro.md) | Module 4: Scheduling |
-| 11 | [The Scheduler That Learns: MLFQ](./05-scheduling/02-scheduler-that-learns.md) | Module 4: Scheduling |
-| 12 | [Concurrency: An Introduction](./06-concurrency/01-concurrency-intro.md) | Module 5: Concurrency |
-| 13 | [Interlude: Thread API](./06-concurrency/02-thread-api.md) | Module 5: Concurrency |
+| 1 | [Structures: Complete Guide](./01-structures-complete-guide.md) | Module 0: C Foundations |
+| 2 | [Pointers and Arrays in C](./02-pointers-and-arrays.md) | Module 0: C Foundations |
+| 3 | [Null, Dangling, Void, and Wild Pointers](./03-pointer-types.md) | Module 0: C Foundations |
+| 4 | [The Process - Most Important Abstraction in Your Computer](./04-the-process.md) | Module 1: What Is a Process? |
+| 5 | [How the OS Never Forgets, Inside the PCB](./05-process-control-block.md) | Module 1: What Is a Process? |
+| 6 | [How Programs Are Born: The Process API](./06-how-programs-are-born.md) | Module 1: What Is a Process? |
+| 7 | [Inside the CPU: Stack Frames and Registers](./07-inside-the-cpu.md) | Module 1: What Is a Process? |
+| 8 | [The Illusion of Private Memory](./08-illusion-of-private-memory.md) | Module 2: Memory |
+| 9 | [From CPU to Disk](./09-from-cpu-to-disk.md) | Module 3: The Big Picture |
+| 10 | [CPU Scheduling: Introduction](./10-cpu-scheduling-introduction.md) | Module 4: Scheduling |
+| 11 | [The Scheduler That Learns: MLFQ](./11-the-scheduler-that-learns.md) | Module 4: Scheduling |
+| 12 | [Concurrency: An Introduction](./12-concurrency-introduction.md) | Module 5: Concurrency |
+| 13 | [Interlude: Thread API](./13-interlude-thread-api.md) | Module 5: Concurrency |
 
 ---
 
