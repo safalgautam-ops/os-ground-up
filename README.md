@@ -35,6 +35,19 @@ This series is written to close that gap. It presents a single continuous accoun
 
 ---
 
+## Source and credit
+
+These posts are rewritten in plain language, for beginners, from two books that I read and worked through:
+
+- **The operating systems lessons (Modules 1 to 5, posts 4 to 13)** are based on *Operating Systems: Three Easy Pieces* (OSTEP) by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.
+- **The C foundations (Module 0, posts 1 to 3)** are based on *The C Programming Language*, 2nd Edition, by Brian W. Kernighan and Dennis M. Ritchie.
+
+The topics and core ideas come from those books; the wording, walkthroughs and diagrams here are my own rewriting for readers who are new to the subject.
+
+This series is not a replacement for either book. For the full and authoritative treatment, read the originals. OSTEP is free to read online at [pages.cs.wisc.edu/~remzi/OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/), and Kernighan and Ritchie is available in print. Any mistakes in these posts are mine, not the authors.
+
+---
+
 ## Who this is for
 
 This series is intended for students who know the vocabulary but do not yet have the underlying mental model. If you have memorized that a process is a running program without ever seeing what that means in memory, this material is written for you.
