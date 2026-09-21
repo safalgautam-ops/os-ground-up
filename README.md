@@ -68,7 +68,7 @@ Every post opens with a breadcrumb such as `Module 1 · Post 4 of 13` so your po
 
 ## Using this in your own notes or classes
 
-Please do, as that is what it is for. You are welcome to take notes from it, quote it, use it in a study group, build a class around it, or translate it. The only request is that you credit me and link back to this repository so that others can find the complete series.
+Please do, as that is what it is for. You are welcome to take notes from it, quote it, use it in a study group, build a class around it, or translate it. The only request is that you credit me and link back to this repository so that others can find the complete series. Because these posts are based on two books (see [Source and credit](#source-and-credit)), please credit those books as well.
 
 ---
 
@@ -82,6 +82,8 @@ Discussions are open for questions on any individual post.
 
 ## License
 
-Written content is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), and code snippets under the [MIT License](https://opensource.org/licenses/MIT). See [LICENSE.md](./LICENSE.md).
+My original written content (wording, explanations and diagrams) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), and the original code snippets I wrote are licensed under the [MIT License](https://opensource.org/licenses/MIT). See [LICENSE.md](./LICENSE.md) for the full notice.
 
-Suggested credit: *"os-ground-up" by Safal Gautam, CC BY 4.0.*
+**These licenses cover only my own contribution.** The posts are rewritten from *Operating Systems: Three Easy Pieces* and *The C Programming Language* (see [Source and credit](#source-and-credit)). Those books are not relicensed here: their ideas, structure and any material adapted from them remain the work of their authors and publishers, under the books' own copyright terms. This project is independent and is not affiliated with or endorsed by the authors or publishers of either book.
+
+*Suggested credit: "os-ground-up" by Safal Gautam, CC BY 4.0. Based on Operating Systems: Three Easy Pieces by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau, and The C Programming Language (2nd Edition) by Brian W. Kernighan and Dennis M. Ritchie.*
