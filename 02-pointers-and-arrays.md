@@ -1,8 +1,3 @@
----
-title: "Pointers and Arrays in C"
-sidebar_position: 2
----
-
 > Module 0 · Post 2 of 13
 
 Pointers are among the most powerful features of C, and also among the most confusing for beginners. The difficulty is that they deal with memory directly, which is something we rarely think about when writing ordinary code.
