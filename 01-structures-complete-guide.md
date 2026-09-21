@@ -1,6 +1,5 @@
 ---
 title: "Structures: Complete Guide"
-sidebar_position: 1
 ---
 
 > Module 0 · Post 1 of 13
