@@ -1,7 +1,3 @@
----
-title: "Null Pointer, Dangling Pointer, Void Pointer, and Wild Pointer"
-sidebar_position: 3
----
 
 > Module 0 · Post 3 of 13
 
