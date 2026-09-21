@@ -1,6 +1,3 @@
----
-title: "Structures: Complete Guide"
----
 
 > Module 0 · Post 1 of 13
 
